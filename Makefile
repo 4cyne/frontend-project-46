@@ -7,6 +7,6 @@ lint:
 	npx eslint .
 	
 gendiff -h:
-	node bin/gendiff.js
+	node bin/gendiff.js -h
 
 
