@@ -6,7 +6,12 @@ install:
 lint:
 	npx eslint .
 	
-gendiff -h:
-	node bin/gendiff.js -h
+publish:
+	npm publish --dry-run
+	
+link:
+	npm link
 
+unlink:
+	npm unlink
 

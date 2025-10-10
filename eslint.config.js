@@ -20,4 +20,9 @@ export default [
       },
     },
   },
+  {
+    rules: {
+      '@stylistic/brace-style': ['error', '1tbs'],
+    },
+  },
 ] // satisfies Linter.Config[]
