@@ -15,3 +15,5 @@ link:
 unlink:
 	npm unlink
 
+test:
+	npm test
