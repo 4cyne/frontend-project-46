@@ -4,11 +4,14 @@ import parsers from './parsers.js'
 import { genDiff } from './genDiff.js'
 import format from './formaters/index.js'
 
-const gendiff = (filePath1, filePath2, formatName = 'plain') => {
+const gendiff = (filePath1, filePath2, formatName = 'stylish') => {
   const getFileFormat = (filePath) => path.extname(filePath).slice(1)
 
   const data = (filePath) => {
-    const absolutePath = path.resolve(process.cwd(), filePath)
+    const absolutePath = path.resolve(filePath)
+    if (!fs.existsSync(absolutePath)) {
+      throw new Error(`file not found ${absolutePath}`)
+    }
     return fs.readFileSync(absolutePath, 'utf-8')
   }
 
