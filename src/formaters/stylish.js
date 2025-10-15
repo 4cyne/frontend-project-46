@@ -38,8 +38,8 @@ const stylish = (tree, depth = 1) => {
 
       case 'changed':
         return [
-          `${curenIndent} + ${key}: ${toString(node.oldValue, depth + 1)}`,
-          `${curenIndent} - ${key}: ${toString(node.newValue, depth + 1)}`,
+          `${curenIndent} - ${key}: ${toString(node.oldValue, depth + 1)}`,
+          `${curenIndent} + ${key}: ${toString(node.newValue, depth + 1)}`,
         ]
 
       case 'nested':

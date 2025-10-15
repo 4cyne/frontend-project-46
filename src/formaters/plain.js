@@ -13,11 +13,12 @@ const toString = (value) => {
 const plain = (tree, path = '') => {
   const lines = tree.flatMap((node) => {
     const currentPath = path ? `${path}.${node.key}` : node.key
+
     switch (node.type) {
       case 'added':
-        return `
-        Property '${currentPath}' was added with value: ${toString(node.value)}
-        `
+        return `Property '${currentPath}' was added with value: ${toString(
+          node.value
+        )}`
       case 'removed':
         return `Property ${currentPath} was removed`
 

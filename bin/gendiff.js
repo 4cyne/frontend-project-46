@@ -9,8 +9,8 @@ program
   .arguments('<filepath1> <filepath2>')
   .version('1.0.0', '-v, --version', 'output the version number')
   .option('-f, --format <type>', 'output format', 'stylish')
-  .action((filepath1, filepath2) => {
-    const diff = gendiff(filepath1, filepath2, program.format)
+  .action((filepath1, filepath2, options) => {
+    const diff = gendiff(filepath1, filepath2, options.format)
     console.log(diff)
   })
 
