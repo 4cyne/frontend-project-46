@@ -23,7 +23,7 @@ export default [
   {
     rules: {
       '@stylistic/brace-style': ['error', '1tbs'],
-      '@stylistic/arrow-parents': 'as-needed',
+      '@stylistic/arrow-parens': ['error', 'as-needed'],
     },
   },
 ]

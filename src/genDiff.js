@@ -6,7 +6,7 @@ export const genDiff = (obj1, obj2) => {
 
   const sortedkeys = _.sortBy(_.union(keys1, keys2))
 
-  const result = sortedkeys.map((key) => {
+  const result = sortedkeys.map(key => {
     const hasKey1 = _.has(obj1, key)
     const hasKey2 = _.has(obj2, key)
     const isObject = _.isPlainObject(obj1[key]) && _.isPlainObject(obj2[key])

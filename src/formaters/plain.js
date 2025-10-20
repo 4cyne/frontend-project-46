@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-const toString = (value) => {
+const toString = value => {
   if (_.isString(value)) {
     return `${value}`
   }
@@ -11,20 +11,20 @@ const toString = (value) => {
 }
 
 const plain = (tree, path = '') => {
-  const lines = tree.flatMap((node) => {
+  const lines = tree.flatMap(node => {
     const currentPath = path ? `${path}.${node.key}` : node.key
 
     switch (node.type) {
       case 'added':
         return `Property '${currentPath}' was added with value: ${toString(
-          node.value
+          node.value,
         )}`
       case 'removed':
         return `Property ${currentPath} was removed`
 
       case 'changed':
         return `Property ${currentPath} was updated. From ${toString(
-          node.oldValue
+          node.oldValue,
         )} to ${toString(node.newValue)}`
 
       case 'nested':
@@ -40,4 +40,4 @@ const plain = (tree, path = '') => {
   return lines.join('\n')
 }
 
-export default (tree) => plain(tree)
+export default tree => plain(tree)
