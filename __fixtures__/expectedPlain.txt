@@ -1,4 +1,11 @@
-Property follow was removed
-Property proxy was removed
-Property timeout was updated. From 50 to 20
-Property 'verbose' was added with value: true
+Property 'follow' was added with value: false
+Property setting2 was removed
+Property setting3 was updated. From true to null
+Property 'setting4' was added with value: blah blah
+Property 'setting5' was added with value: [conplex value]
+Property wow was updated. From  to so much
+Property 'ops' was added with value: vops
+Property baz was updated. From bas to bars
+Property nest was updated. From [conplex value] to str
+Property group2 was removed
+Property 'group3' was added with value: [conplex value]
