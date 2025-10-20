@@ -4,7 +4,7 @@
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=4cyne_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=4cyne_frontend-project-46)
 
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=4cyne_frontend-project-46&metric=coverage)](https://sonarcloud.io/summary/new_code?id=4cyne_frontend-project-46)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=4cyne_frontend-project-46)](https://sonarcloud.io/summary/new_code?id=4cyne_frontend-project-46)
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=4cyne_frontend-project-46&metric=bugs)](https://sonarcloud.io/summary/new_code?id=4cyne_frontend-project-46)
 
