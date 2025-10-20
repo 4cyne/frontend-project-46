@@ -15,3 +15,5 @@
 ## Пример работы с плоскими json файлами: https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0
 
 ## Пример работы с плоскими yaml, yml файлами: https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin
+
+## Пример работы с вложенными файлами: https://asciinema.org/a/yez6RpLTEbglWuCoxzMm5NSAA

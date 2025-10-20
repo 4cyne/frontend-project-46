@@ -27,6 +27,11 @@ const getFixturePath = filename =>
 
 const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
+test('non-existent file', () => {
+  expect(() => genDiff('nonExistent.json', 'file2.json')).toThrow(
+    `file not found`)
+})
+
 test.each(testTypes)('compare files with format', (fileExt, outputFormat) => {
   let filePath1, filePath2
 
