@@ -9,11 +9,11 @@ jobs:
   sonarqube:
     name: SonarQube
     runs-on: ubuntu-latest
-    steps:
-      - uses: docs/example-action@b16d2601a6b948e2fb26f3772276581f31daa7cd
-        with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v6
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      steps:
+        - uses: actions/checkout@v4.1.1
+          with:
+            fetch-depth: 0
+        - name: SonarQube Scan
+          uses: SonarSource/sonarqube-scan-action@v6.0.0
+          env:
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
