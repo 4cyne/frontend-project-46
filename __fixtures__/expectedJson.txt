@@ -1,6 +1,6 @@
 [
   {
-    "name": "common",
+    "key": "common",
     "type": "nested",
     "children": [
       {
@@ -37,11 +37,11 @@
         }
       },
       {
-        "name": "setting6",
+        "key": "setting6",
         "type": "nested",
         "children": [
           {
-            "name": "doge",
+            "key": "doge",
             "type": "nested",
             "children": [
               {
@@ -67,7 +67,7 @@
     ]
   },
   {
-    "name": "group1",
+    "key": "group1",
     "type": "nested",
     "children": [
       {

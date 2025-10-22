@@ -20,7 +20,7 @@ const toString = (value, depth) => {
 }
 
 const stylish = (tree, depth = 1) => {
-  const indentSize = depth * 4 - 3
+  const indentSize = depth * 4 - 4
   const curentIndent = ' '.repeat(indentSize)
 
   const lines = tree.map(node => {
