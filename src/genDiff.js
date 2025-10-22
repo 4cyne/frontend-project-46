@@ -13,7 +13,7 @@ export const genDiff = (obj1, obj2) => {
 
     if (isObject) {
       return {
-        name: key,
+        key,
         type: 'nested',
         children: genDiff(obj1[key], obj2[key]),
       }

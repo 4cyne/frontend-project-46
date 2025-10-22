@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/comma-dangle */
 import _ from 'lodash'
 
 const toString = value => {
@@ -17,18 +18,17 @@ const plain = (tree, path = '') => {
 
   const lines = tree.flatMap(node => {
     const currentPath = path ? `${path}.${node.key}` : node.key
-
     switch (node.type) {
       case 'added':
         return `Property '${currentPath}' was added with value: ${toString(
-          node.value,
+          node.value
         )}`
       case 'removed':
         return `Property '${currentPath}' was removed`
 
       case 'changed':
         return `Property '${currentPath}' was updated. From ${toString(
-          node.oldValue,
+          node.oldValue
         )} to ${toString(node.newValue)}`
 
       case 'nested':
