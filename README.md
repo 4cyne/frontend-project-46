@@ -12,10 +12,38 @@
 
 # Проект "Вычислитель отличий"
 
-## Пример работы с плоскими json файлами: https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0
+## clone project: git clone https://github.com/4cyne/frontend-project-46.git
 
-## Пример работы с плоскими yaml, yml файлами: https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin
+```
+git clone https://github.com/4cyne/frontend-project-46.git
+```
 
-## Пример работы с вложенными файлами: https://asciinema.org/a/iidGVetvQ7N37Qo6c7NeNoX3g
+## install packages:
 
-## Пример работы с плоским форматом вывода: https://asciinema.org/a/Qk4vSAUPoohIUQokFp9WSg0fN
+```
+npm install
+npm link
+```
+
+##how to use:
+
+```
+Usage: gendiff [options] <filepath1> <filepath2>
+
+Compares two configuration files and shows a difference.
+
+Options:
+  -v, --version        output the version number
+  -f, --format <type>  output format (default: "stylish")
+  -h, --help           display help for command
+```
+
+### Пример работы с плоскими json файлами: https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0
+
+### Пример работы с плоскими yaml, yml файлами: https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin
+
+### Пример работы с вложенными файлами: https://asciinema.org/a/iidGVetvQ7N37Qo6c7NeNoX3g
+
+### Пример работы с плоским (plain) форматом вывода: https://asciinema.org/a/Qk4vSAUPoohIUQokFp9WSg0fN
+
+### Пример работы с плоским (json) форматом вывода: https://asciinema.org/a/Cc1TRXX9GIEorY5nXOYgt9v20

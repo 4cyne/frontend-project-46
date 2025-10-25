@@ -5,6 +5,9 @@ install:
 
 lint:
 	npx eslint .
+
+lint--json: 
+	npx eslint . --format json
 	
 publish:
 	npm publish --dry-run
