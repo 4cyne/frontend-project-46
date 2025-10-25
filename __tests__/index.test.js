@@ -22,14 +22,14 @@ const testTypes = [
   ['yaml-json', 'stylish'],
 ]
 
-const getFixturePath = (filename) =>
+const getFixturePath = filename =>
   path.join(__dirname, '..', '__fixtures__', filename)
 
-const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8')
+const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
 test('non-existent file', () => {
   expect(() => genDiff('nonExistent.json', 'file2.json')).toThrow(
-    `file not found`,
+    'file not found',
   )
 })
 
@@ -41,7 +41,7 @@ test.each(testTypes)('compare files with format', (fileExt, outputFormat) => {
     filePath1 = getFixturePath(`file1.${ext1}`)
     filePath2 = getFixturePath(`file2.${ext2}`)
   }
- else {
+  else {
     filePath1 = getFixturePath(`file1.${fileExt}`)
     filePath2 = getFixturePath(`file2.${fileExt}`)
   }

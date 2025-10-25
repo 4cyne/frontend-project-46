@@ -4,21 +4,14 @@ import pluginJs from '@eslint/js'
 export default [
   pluginJs.configs.recommended,
   {
-    files: ['**/*.{js,ts,tsx}'],
-  },
-  {
-    ignores: ['dist/'],
-  },
-  {
+    files: ['**/*.js'],
     languageOptions: {
       globals: globals.node,
     },
-  },
-  {
     rules: {
-      // Правила, которые использует Hexlet
-      'arrow-parens': ['error', 'always'],
-      'brace-style': ['error', 'stroustrup'],
+      'arrow-parens': ['error', 'as-needed'],
+      'quotes': ['error', 'single'],
+      'semi': ['error', 'never'],
     },
   },
 ]
