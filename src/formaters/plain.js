@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-const toString = value => {
+const toString = (value) => {
   if (_.isString(value)) {
     return `'${value}'`
   }
@@ -15,7 +15,7 @@ const plain = (tree, path = '') => {
     return ''
   }
 
-  const lines = tree.flatMap(node => {
+  const lines = tree.flatMap((node) => {
     const currentPath = path ? `${path}.${node.key}` : node.key
     switch (node.type) {
       case 'added':

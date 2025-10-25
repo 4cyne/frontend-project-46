@@ -3,18 +3,21 @@ import pluginJs from '@eslint/js'
 import stylistic from '@stylistic/eslint-plugin'
 
 export default [
-  pluginJs.configs.recommended,
   stylistic.configs.recommended,
+  pluginJs.configs.recommended,
   {
-    files: ['**/*.js'],
+    files: ['**/*.{js,ts,tsx}'],
+  },
+  {
+    ignores: ['dist/'],
+  },
+  {
     languageOptions: {
       globals: globals.node,
-    },
-    rules: {
-      'arrow-parens': 'off',
-      '@stylistic/arrow-parens': ['error', 'as-needed'],
-      'quotes': ['error', 'single'],
-      'semi': ['error', 'never'],
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
   },
 ]
