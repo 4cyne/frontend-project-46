@@ -20,7 +20,7 @@ const toString = (value, depth) => {
 }
 
 const stylish = (tree, depth = 1) => {
-  const indentSize = depth * 4 - 4
+  const indentSize = depth * 4 - 2
   const curentIndent = ' '.repeat(indentSize)
 
   const lines = tree.map(node => {
@@ -28,22 +28,22 @@ const stylish = (tree, depth = 1) => {
 
     switch (type) {
       case 'added':
-        return `${curentIndent} + ${key}: ${toString(node.value, depth + 1)}`
+        return `${curentIndent}+ ${key}: ${toString(node.value, depth + 1)}`
 
       case 'removed':
-        return `${curentIndent} - ${key}: ${toString(node.value, depth + 1)}`
+        return `${curentIndent}- ${key}: ${toString(node.value, depth + 1)}`
 
       case 'unchanged':
-        return `${curentIndent}   ${key}: ${toString(node.value, depth + 1)}`
+        return `${curentIndent}  ${key}: ${toString(node.value, depth + 1)}`
 
       case 'changed':
         return [
-          `${curentIndent} - ${key}: ${toString(node.oldValue, depth + 1)}`,
-          `${curentIndent} + ${key}: ${toString(node.newValue, depth + 1)}`,
+          `${curentIndent}- ${key}: ${toString(node.oldValue, depth + 1)}`,
+          `${curentIndent}+ ${key}: ${toString(node.newValue, depth + 1)}`,
         ]
 
       case 'nested':
-        return `${curentIndent}   ${key}: ${stylish(node.children, depth + 1)}`
+        return `${curentIndent}  ${key}: ${stylish(node.children, depth + 1)}`
 
       default:
         return ''
@@ -51,7 +51,8 @@ const stylish = (tree, depth = 1) => {
   })
 
   const flatLines = lines.flat().join('\n')
-  return `{\n${flatLines}\n${curentIndent}}`
+  const bracketIndent = ' '.repeat(depth * 4 - 4)
+  return `{\n${flatLines}\n${bracketIndent}}`
 }
 
 export default tree => stylish(tree)
