@@ -38,12 +38,22 @@ Options:
   -h, --help           display help for command
 ```
 
-### Пример работы с плоскими json файлами: https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0
+### Пример работы с плоскими json файлами:
 
-### Пример работы с плоскими yaml, yml файлами: https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin
+[![Watch the video](https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0.svg)](https://asciinema.org/a/4893JjqpRKpwVf1Pd8JXOaJv0)
 
-### Пример работы с вложенными файлами: https://asciinema.org/a/iidGVetvQ7N37Qo6c7NeNoX3g
+### Пример работы с плоскими yaml, yml файлами:
 
-### Пример работы с плоским (plain) форматом вывода: https://asciinema.org/a/Qk4vSAUPoohIUQokFp9WSg0fN
+[![Watch the video](https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin.svg)](https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin)
 
-### Пример работы с плоским (json) форматом вывода: https://asciinema.org/a/Cc1TRXX9GIEorY5nXOYgt9v20
+### Пример работы с вложенными файлами:
+
+[![Watch the video](https://asciinema.org/a/iidGVetvQ7N37Qo6c7NeNoX3g.svg)](https://asciinema.org/a/iidGVetvQ7N37Qo6c7NeNoX3g)
+
+### Пример работы с плоским (plain) форматом вывода:
+
+[![Watch the video](https://asciinema.org/a/Qk4vSAUPoohIUQokFp9WSg0fN.svg)](https://asciinema.org/a/Qk4vSAUPoohIUQokFp9WSg0fN)
+
+### Пример работы с плоским (json) форматом вывода:
+
+[![Watch the video](https://asciinema.org/a/Cc1TRXX9GIEorY5nXOYgt9v20.svg)](https://asciinema.org/a/Cc1TRXX9GIEorY5nXOYgt9v20)
