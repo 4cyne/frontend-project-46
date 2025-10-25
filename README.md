@@ -25,7 +25,7 @@ npm install
 npm link
 ```
 
-##how to use:
+## how to use:
 
 ```
 Usage: gendiff [options] <filepath1> <filepath2>
