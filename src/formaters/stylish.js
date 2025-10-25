@@ -24,7 +24,7 @@ const stylish = (tree, depth = 1) => {
   const indentSize = depth * 4 - 2
   const curentIndent = ' '.repeat(indentSize)
 
-  const lines = tree.map(node => {
+  const lines = tree.map((node) => {
     const { key, type } = node
 
     switch (type) {
@@ -56,4 +56,4 @@ const stylish = (tree, depth = 1) => {
   return `{\n${flatLines}\n${bracketIndent}}`
 }
 
-export default tree => stylish(tree)
+export default (tree) => stylish(tree)

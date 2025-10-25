@@ -1,9 +1,7 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
-import stylistic from '@stylistic/eslint-plugin'
 
 export default [
-  stylistic.configs.recommended,
   pluginJs.configs.recommended,
   {
     files: ['**/*.{js,ts,tsx}'],
@@ -14,16 +12,13 @@ export default [
   {
     languageOptions: {
       globals: globals.node,
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
     },
   },
   {
     rules: {
-      '@stylistic/brace-style': ['error', '1tbs'],
-      '@stylistic/arrow-parens': ['error', 'as-needed'],
+      // Правила, которые использует Hexlet
+      'arrow-parens': ['error', 'always'],
+      'brace-style': ['error', 'stroustrup'],
     },
   },
 ]
