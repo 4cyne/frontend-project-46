@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/brace-style */
 import { test, expect } from '@jest/globals'
 import fs from 'fs'
 import _ from 'lodash'
@@ -39,7 +40,8 @@ test.each(testTypes)('compare files with format', (fileExt, outputFormat) => {
     const [ext1, ext2] = fileExt.split('-')
     filePath1 = getFixturePath(`file1.${ext1}`)
     filePath2 = getFixturePath(`file2.${ext2}`)
-  } else {
+  }
+  else {
     filePath1 = getFixturePath(`file1.${fileExt}`)
     filePath2 = getFixturePath(`file2.${fileExt}`)
   }

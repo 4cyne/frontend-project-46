@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/arrow-parens */
 import _ from 'lodash'
 const toString = (value, depth) => {
   if (_.isString(value)) {
@@ -23,7 +24,7 @@ const stylish = (tree, depth = 1) => {
   const indentSize = depth * 4 - 2
   const curentIndent = ' '.repeat(indentSize)
 
-  const lines = tree.map(node => {
+  const lines = tree.map((node) => {
     const { key, type } = node
 
     switch (type) {
