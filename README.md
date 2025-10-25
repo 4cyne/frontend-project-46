@@ -12,7 +12,7 @@
 
 # Проект "Вычислитель отличий"
 
-## clone project: git clone https://github.com/4cyne/frontend-project-46.git
+## clone project:
 
 ```
 git clone https://github.com/4cyne/frontend-project-46.git
