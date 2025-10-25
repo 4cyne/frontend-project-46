@@ -16,4 +16,4 @@
 
 ## Пример работы с плоскими yaml, yml файлами: https://asciinema.org/a/mbw6zT7ktKrwKGbfeZZeE4Kin
 
-## Пример работы с вложенными файлами: https://asciinema.org/a/yez6RpLTEbglWuCoxzMm5NSAA
+## Пример работы с вложенными файлами: https://asciinema.org/a/f1zezmOptu4kpayD6AyJsJ0gm
