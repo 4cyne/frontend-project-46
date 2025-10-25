@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/arrow-parens */
 import fs from 'fs'
 import path from 'path'
 import parsers from './parsers.js'
